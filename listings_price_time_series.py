@@ -1,0 +1,15 @@
+listings['last_scraped'] = pd.to_datetime(listings['last_scraped'])
+ts = listings.groupby(listings['last_scraped'].dt.to_period('M')).agg({'id':'count', 'price':'mean'})
+ts.index = ts.index.to_timestamp()
+
+fig, ax1 = plt.subplots()
+ax2 = ax1.twinx()
+ax1.plot(ts.index, ts['id'], color='blue', label='Number of Listings')
+ax2.plot(ts.index, ts['price'], color='red', label='Average Price')
+
+ax1.set_xlabel('Date')
+ax1.set_ylabel('Listings')
+ax2.set_ylabel('Price')
+plt.title('Listings and Pricing Trends Over Time')
+fig.tight_layout()
+plt.show()
