@@ -1,0 +1,5 @@
+plt.figure(figsize=(10,5))
+sns.countplot(data=listings, y='room_type', order=listings['room_type'].value_counts().index)
+plt.title('Distribution of Property Types Across Sydney')
+plt.tight_layout()
+plt.show()
