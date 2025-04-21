@@ -1,0 +1,5 @@
+listings['stay_type'] = listings['minimum_nights'].apply(lambda x: 'Short-term' if x < 30 else 'Long-term')
+sns.countplot(data=listings, x='stay_type', palette='Set2')
+plt.title('Short-term vs. Long-term Rentals')
+plt.tight_layout()
+plt.show()
