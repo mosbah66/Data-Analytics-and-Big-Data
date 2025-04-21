@@ -103,5 +103,13 @@ This work is based on the academic case study submitted as part of:
    python filename.py
 
 
+## Outputs
+
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/2f1722ca-f81d-4590-bc4b-5df4c54fdf7d" />
+<img width="1439" alt="image" src="https://github.com/user-attachments/assets/e6eee7aa-34b8-4dd0-b4b3-4a5f6f20b4f3" />
+<img width="637" alt="image" src="https://github.com/user-attachments/assets/7f43b2bd-f928-4e20-ac8b-d57e85a4f715" />
+<img width="638" alt="image" src="https://github.com/user-attachments/assets/8b07365d-3dfb-4cb2-88e6-73c619d105db" />
+
+
 
 
